@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>User Management System</title>
+</head>
+<body>
+    <header>
+        <h1>User Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="register-link">Registration</a></li>
+                <li><a href="#" id="login-link">Login</a></li>
+                <li><a href="#" id="list-users-link">List Users</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="content">
+        <div id="register-form" class="form-container">
+            <form id="registration-form">
+                <label for="register-username">Username:</label>
+                <input type="text" id="register-username" required>
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" required>
+                <label for="register-first-name">First Name:</label>
+                <input type="text" id="register-first-name" required>
+                <label for="register-last-name">Last Name:</label>
+                <input type="text" id="register-last-name" required>
+                <label for="register-age">Age:</label>
+                <input type="number" id="register-age" required>
+                <label for="register-gender">Gender:</label>
+                <select id="register-gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+
+        <div id="login-form" class="form-container">
+            <form id="login-form">
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+
+        <div id="user-list" class="form-container">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
